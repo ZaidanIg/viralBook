@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Viral Book</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Importing ~40-50 Fonts categorized -->
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alfa+Slab+One&family=Amatic+SC:wght@400;700&family=Anton&family=Bebas+Neue&family=Cabin:wght@400;700&family=Caveat:wght@400;700&family=Cinzel:wght@400;700&family=Comfortaa:wght@300;700&family=Cormorant+Garamond:wght@300;700&family=Courgette&family=Dancing+Script:wght@400;700&family=DM+Sans:wght@400;700&family=EB+Garamond:wght@400;700&family=Exo+2:wght@300;700&family=Fjalla+One&family=Fredoka+One&family=Gloria+Hallelujah&family=Great+Vibes&family=Heebo:wght@300;700&family=IBM+Plex+Sans:wght@300;700&family=Indie+Flower&family=Inter:wght@300;400;700&family=Josefin+Sans:wght@300;700&family=Kanit:wght@300;700&family=Lato:wght@300;400;700&family=Lobster&family=Lora:wght@400;700&family=Merriweather:wght@300;700&family=Monoton&family=Montserrat:wght@300;700&family=Nunito:wght@300;700&family=Open+Sans:wght@300;700&family=Oswald:wght@300;700&family=Pacifico&family=Patrick+Hand&family=Permanent+Marker&family=Playfair+Display:wght@400;700&family=Poppins:wght@300;700&family=Prompt:wght@300;700&family=PT+Serif:wght@400;700&family=Quicksand:wght@300;700&family=Raleway:wght@300;700&family=Righteous&family=Roboto:wght@300;700&family=Roboto+Slab:wght@300;700&family=Rubik:wght@300;700&family=Sacramento&family=Satisfy&family=Shadows+Into+Light&family=Source+Sans+Pro:wght@300;700&family=Space+Mono:wght@400;700&family=Ubuntu:wght@300;700&family=Vollkorn:wght@400;700&family=Work+Sans:wght@300;700&family=Zilla+Slab:wght@300;700&display=swap" rel="stylesheet">
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+              serif: ['Playfair Display', 'serif'],
+              mono: ['Oswald', 'sans-serif'],
+            },
+            colors: {
+              zeo: {
+                bg: '#0b0c15',      // Main background (very dark)
+                card: '#12131e',    // Card background
+                input: '#1a1b26',   // Input background
+                border: '#2a2b3d',  // Border color
+                primary: '#d946ef', // Pink/Fuchsia primary
+                secondary: '#8b5cf6', // Violet secondary
+                text: '#e2e8f0',    // Main text
+                muted: '#94a3b8',   // Muted text
+                green: '#10b981',   // Status ready
+              }
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      /* Custom Scrollbar for that pro app feel */
+      ::-webkit-scrollbar {
+        width: 8px;
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #0b0c15; 
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #2a2b3d; 
+        border-radius: 4px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #3f415a; 
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.35.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "docx": "https://esm.sh/docx@8.5.0",
+    "file-saver": "https://esm.sh/file-saver@2.0.5"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-zeo-bg text-zeo-text antialiased overflow-hidden">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
